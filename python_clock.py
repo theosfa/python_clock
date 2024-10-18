@@ -4,7 +4,7 @@ from time import sleep                                              # Подкл
 from math import tan, sqrt, pi, pow, radians                        # Подключение методов для работы с математическими функциями
 
 
-
+__all__ = ["main"]
 def clock(clockRadius):                                             # Функция рисования часов, передаваемые значаения - радиус часов
     t.pensize(3)                                                    # Установка толщины пера на 3 px
     t.penup()                                                       # Поднятие пера
