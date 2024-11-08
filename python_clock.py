@@ -1,4 +1,4 @@
-import turtle                                                       # Подключение библиотеки turtle
+#import turtle                                                       # Подключение библиотеки turtle
 
 from time import sleep                                              # Подключение метода sleep библиотеки time
 from math import tan, sqrt, pi, pow, radians                        # Подключение методов для работы с математическими функциями
@@ -42,43 +42,44 @@ def arrow(degree, r, th):                                           # Функц
 
 
 def main(args: list[str]) -> None:
-    turtle.screensize(canvwidth=300, canvheight=300, bg="black")        # Установка размеров окна и его задний фон
-    print(turtle.screensize())                                          # Вывод размеров окна в консоль
-    t = turtle.Turtle()                                                 # Создание "черепашки" в переменной t
+    pass
+    #turtle.screensize(canvwidth=300, canvheight=300, bg="black")        # Установка размеров окна и его задний фон
+    #print(turtle.screensize())                                          # Вывод размеров окна в консоль
+    #t = turtle.Turtle()                                                 # Создание "черепашки" в переменной t
 
-    t.hideturtle()                                                      # Спрятать "черепашку"
-    t.color("white")                                                    # Установить цвет "черепашки" на белый
-    turtle.title("My Clocks")                                           # Изменение названия окна на "My Clocks"
-    clockRadius = 300                                                   # Установка радиуса часов на 300
+    #t.hideturtle()                                                      # Спрятать "черепашку"
+    #t.color("white")                                                    # Установить цвет "черепашки" на белый
+    #turtle.title("My Clocks")                                           # Изменение названия окна на "My Clocks"
+    #clockRadius = 300                                                   # Установка радиуса часов на 300
 
-    turtle.tracer(0, 0)                                                 # Ускорение анимации по средством вывода всего за раз а не постепенно
-    seconds = 0                                                         # Установка секунд на ноль
-    angleSeconds = 0                                                    # Установка угла секунд на ноль
-    angleMinutes = 0                                                    # Установка угла минут на ноль
-    angleHours = 0                                                      # Установка угла часов на ноль
+    #turtle.tracer(0, 0)                                                 # Ускорение анимации по средством вывода всего за раз а не постепенно
+    #seconds = 0                                                         # Установка секунд на ноль
+    #angleSeconds = 0                                                    # Установка угла секунд на ноль
+    #angleMinutes = 0                                                    # Установка угла минут на ноль
+    #angleHours = 0                                                      # Установка угла часов на ноль
 
-    while True:                                                         # Бесконечный цикл для работы часов
-        clock(clockRadius)                                              # Вызов функции рисования часов
-        arrow(angleSeconds, clockRadius-40, 1)                          # Вызов функции рисования секундной стрелки
-        arrow(angleMinutes, clockRadius-60, 2)                          # Вызов функции рисования минутной стрелки
-        arrow(angleHours, clockRadius-120, 3)                           # Вызов функции рисования часовой стрелки
-        turtle.update()                                                 # Обновление экрана
+    #while True:                                                         # Бесконечный цикл для работы часов
+        #clock(clockRadius)                                              # Вызов функции рисования часов
+        #arrow(angleSeconds, clockRadius-40, 1)                          # Вызов функции рисования секундной стрелки
+        #arrow(angleMinutes, clockRadius-60, 2)                          # Вызов функции рисования минутной стрелки
+        #arrow(angleHours, clockRadius-120, 3)                           # Вызов функции рисования часовой стрелки
+        #turtle.update()                                                 # Обновление экрана
 
-        seconds += 1                                                    # Увеличение секунд на единицу
-        angleSeconds += 6                                               # Увеличение секундного угла на 6, тк в минуте 60 секунд а в окружности 360 градусов
-        if seconds % 10 == 0:                                           # Если количество секунд кратно 10 без остатка то
-            angleMinutes += 1                                           # Увеличение минутного угла на 1
-        if seconds % 120 == 0:                                          # Если количество секунд кратно 120 без остатка то
-            angleHours += 1                                             # Увеличение часового угла на 1
+        #seconds += 1                                                    # Увеличение секунд на единицу
+        #angleSeconds += 6                                               # Увеличение секундного угла на 6, тк в минуте 60 секунд а в окружности 360 градусов
+        #if seconds % 10 == 0:                                           # Если количество секунд кратно 10 без остатка то
+         #   angleMinutes += 1                                           # Увеличение минутного угла на 1
+        #if seconds % 120 == 0:                                          # Если количество секунд кратно 120 без остатка то
+        #    angleHours += 1                                             # Увеличение часового угла на 1
 
-        if angleSeconds == 360:                                         # Если секундный угол равен 360 то
-            angleSeconds = 0                                            # Обнуление секундного угла
-        if angleMinutes == 360:                                         # Если минутный угол равен 360 то
-            angleMinutes = 0                                            # Обнуление минутного угла
-        if angleHours == 360:                                           # Если часовой угол равен 360 то
-            angleHours = 0                                              # Обнуление часового угла
+       # if angleSeconds == 360:                                         # Если секундный угол равен 360 то
+        #    angleSeconds = 0                                            # Обнуление секундного угла
+        #if angleMinutes == 360:                                         # Если минутный угол равен 360 то
+        #    angleMinutes = 0                                            # Обнуление минутного угла
+       # if angleHours == 360:                                           # Если часовой угол равен 360 то
+        #    angleHours = 0                                              # Обнуление часового угла
         # sleep(0.001)
-        t.clear()                                                       # Очистка экрана
+        #t.clear()                                                       # Очистка экрана
 
 
     # r = const
